@@ -138,8 +138,8 @@ if(!is_null($events)){
                    'This is Text' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
                     ),
                     new UriTemplateActionBuilder(
-                   'Uri Template', // ข้อความแสดงในปุ่ม
-                   'https://www.ninenik.com'
+                   'Vibhavadi Hospital', // ข้อความแสดงในปุ่ม
+                   'https://www.vibhavadi.com'
                     ),
                    new DatetimePickerTemplateActionBuilder(
                    'Datetime Picker', // ข้อความแสดงในปุ่ม
