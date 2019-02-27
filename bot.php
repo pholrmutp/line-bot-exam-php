@@ -71,6 +71,12 @@ if(!is_null($events)){
                 case "B":
                     $textReplyMessage = "คุณพิมพ์ B";
                     break;
+              case "C":
+                    $textReplyMessage = "คุณพิมพ์ C";
+                    break;
+              case "TA":
+                    $textReplyMessage = "คุณภาสกร";
+                    break;
                 default:
                     $textReplyMessage = " คุณไม่ได้พิมพ์ A และ B";
                     break;                                      
