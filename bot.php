@@ -86,11 +86,9 @@ if(!is_null($events)){
                     break;
                 case "l":
                     $placeName = "ที่ตั้งโรงพยาบาลวิภาวดี";
-                    $placeAddress = "51/3 ถ.งามวงศ์วาน เขตจตุจักร กรุงเทพฯ 10900
-                                     โทร. +66(0)2-561-1111, +66(0)2-941-2900, +66(0)2-941-2800 
-                                     แฟกซ์ +66(0)2-561-1466";
-                    $latitude = 13.846426;
-                    $longitude = 100.562177;
+                    $placeAddress = "51/3 ถ.งามวงศ์วาน เขตจตุจักร กรุงเทพฯ 10900";
+                    $latitude = 13.8462543;
+                    $longitude = 100.5599352;
                     $replyData = new LocationMessageBuilder($placeName, $placeAddress, $latitude ,$longitude);              
                     break;
                 case "s":
