@@ -60,24 +60,6 @@ $events = json_decode($content, true);
 if(!is_null($events)){
     // ถ้ามีค่า สร้างตัวแปรเก็บ replyToken ไว้ใช้งาน
     $replyToken = $events['events'][0]['replyToken'];
-}
-// ส่วนของคำสั่งจัดเตียมรูปแบบข้อความสำหรับส่ง
-$textMessageBuilder = new TextMessageBuilder(json_encode($events));
- 
-//l ส่วนของคำสั่งตอบกลับข้อความ
-$response = $bot->replyMessage($replyToken,$textMessageBuilder);
-if ($response->isSucceeded()) {
-    echo 'Succeeded!';
-    return;
-}
- 
-// Failed
-echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
-
-$events = json_decode($content, true);
-if(!is_null($events)){
-    // ถ้ามีค่า สร้างตัวแปรเก็บ replyToken ไว้ใช้งาน
-    $replyToken = $events['events'][0]['replyToken'];
     $typeMessage = $events['events'][0]['message']['type'];
     $userMessage = $events['events'][0]['message']['text'];
     switch ($typeMessage){
@@ -104,4 +86,9 @@ $textMessageBuilder = new TextMessageBuilder($textReplyMessage);
  
 //l ส่วนของคำสั่งตอบกลับข้อความ
 $response = $bot->replyMessage($replyToken,$textMessageBuilder);
+ 
+// Failed
+echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
+
+
 ?>
