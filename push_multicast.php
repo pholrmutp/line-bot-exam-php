@@ -56,6 +56,7 @@ $bot = new LINEBot($httpClient, array('channelSecret' => LINE_MESSAGE_CHANNEL_SE
 $userIds = array(
     'U0e959593d22f912974f8216928e88968',
     'U3fc5b043ff752d5b78c9b2f5eb093084',     
+    'Ue4fcf5fa0e1fa60d84433c7614e61b56',  
 );      
 // ทดสอบส่ง push ข้อความอย่างง่าย
 $textPushMessage = 'สวัสดีครับ';                
