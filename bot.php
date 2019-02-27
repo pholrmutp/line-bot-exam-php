@@ -135,7 +135,7 @@ if(!is_null($events)){
                    $actionBuilder = array(
                    new MessageTemplateActionBuilder(
                    'Guild line',// ข้อความแสดงในปุ่ม
-                   'This is Text' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+                   'tm' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
                     ),
                     new UriTemplateActionBuilder(
                    'Vibhavadi Hospital', // ข้อความแสดงในปุ่ม
