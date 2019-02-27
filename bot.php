@@ -217,6 +217,28 @@ if(!is_null($events)){
                             )
                             );
                            break;  
+                    case "menu3":
+                          $replyData = new TemplateMessageBuilder('Image Carousel',
+                          new ImageCarouselTemplateBuilder(
+                          array(
+                          new ImageCarouselColumnTemplateBuilder(
+                          'https://www.vibhavadi.co.th/hi.jpg',
+                          new UriTemplateActionBuilder(
+                          'Pholapat1', // ข้อความแสดงในปุ่ม
+                         'https://www.vibhavadi.com'
+                          )
+                          ),
+                          new ImageCarouselColumnTemplateBuilder(
+                          'https://www.vibhavadi.co.th/hi2.jpg',
+                          new UriTemplateActionBuilder(
+                          'Pholapat2', // ข้อความแสดงในปุ่ม
+                         'https://www.vibhavadi.com'
+                    )
+                )                                       
+            )
+        )
+    );
+    break;  
                 default:
                     $textReplyMessage = " คุณไม่ได้พิมพ์ ค่า ตามที่กำหนด";
                     $replyData = new TextMessageBuilder($textReplyMessage);         
