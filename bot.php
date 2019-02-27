@@ -175,11 +175,11 @@ if(!is_null($events)){
                        // กำหนด action 4 ปุ่ม 4 ประเภท
                        $actionBuilder = array(
                        new MessageTemplateActionBuilder(
-                       'Message Template',// ข้อความแสดงในปุ่ม
-                       'This is Text' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+                       'Button 1',// ข้อความแสดงในปุ่ม
+                       'Button 1' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
                         ),
                         new UriTemplateActionBuilder(
-                       'Uri Template', // ข้อความแสดงในปุ่ม
+                       'Button 2', // ข้อความแสดงในปุ่ม
                        'https://www.vibhavadi.com'
                        ),
                        new PostbackTemplateActionBuilder(
