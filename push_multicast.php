@@ -59,7 +59,7 @@ $userIds = array(
     'Ue4fcf5fa0e1fa60d84433c7614e61b56',  
 );      
 // ทดสอบส่ง push ข้อความอย่างง่าย
-$textPushMessage = 'สวัสดีครับ';                
+$textPushMessage = 'สวัสดีครับ BOT multi cast it Vibhavadi จ๊ะ';                
 $messageData = new TextMessageBuilder($textPushMessage);        
              
 $response = $bot->multicast($userIds,$messageData);
