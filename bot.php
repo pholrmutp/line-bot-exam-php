@@ -97,7 +97,7 @@ if(!is_null($events)){
                     $replyData = new StickerMessageBuilder($packageID,$stickerID);
                     break;      
                 case "im":
-                    $imageMapUrl = 'https://www.vibhavadi.co.th/logo';
+                    $imageMapUrl = 'https://www.vibhavadi.co.th/hi.jpg';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         'This is Title',
@@ -171,7 +171,7 @@ if(!is_null($events)){
                       )
                          );              
                     break;  
-                    case "t_c":
+                    case "menu2":
                        // กำหนด action 4 ปุ่ม 4 ประเภท
                        $actionBuilder = array(
                        new MessageTemplateActionBuilder(
@@ -180,7 +180,7 @@ if(!is_null($events)){
                         ),
                         new UriTemplateActionBuilder(
                        'Uri Template', // ข้อความแสดงในปุ่ม
-                       'https://www.ninenik.com'
+                       'https://www.vibhavadi.com'
                        ),
                        new PostbackTemplateActionBuilder(
                        'Postback', // ข้อความแสดงในปุ่ม
@@ -198,19 +198,19 @@ if(!is_null($events)){
                          new CarouselColumnTemplateBuilder(
                          'Title Carousel',
                          'Description Carousel',
-                         'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/700',
+                         'https://www.vibhavadi.co.th/hi.jpg',
                           $actionBuilder
                           ),
                           new CarouselColumnTemplateBuilder(
                          'Title Carousel',
                          'Description Carousel',
-                         'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/700',
+                         'https://www.vibhavadi.co.th/hi.jpg',
                          $actionBuilder
                           ),
                            new CarouselColumnTemplateBuilder(
                           'Title Carousel',
                            'Description Carousel',
-                           'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/700',
+                           'https://www.vibhavadi.co.th/hi.jpg',
                             $actionBuilder
                             ),                                          
                             )
