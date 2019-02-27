@@ -142,7 +142,7 @@ if(!is_null($events)){
                    'https://www.vibhavadi.com'
                     ),
                    new DatetimePickerTemplateActionBuilder(
-                   'Datetime Picker', // ข้อความแสดงในปุ่ม
+                   'ดูปฏิทิน', // ข้อความแสดงในปุ่ม
                     http_build_query(array(
                     'action'=>'reservation',
                     'person'=>5
@@ -153,7 +153,7 @@ if(!is_null($events)){
                      substr_replace(date("Y-m-d H:i"),'T',10,1) //วันที่ เวลา น้อยสุดที่เลือกได้
                      ),      
                      new PostbackTemplateActionBuilder(
-                     'Postback', // ข้อความแสดงในปุ่ม
+                     'ดู UID ', // ข้อความแสดงในปุ่ม
                       http_build_query(array(
                      'action'=>'buy',
                      'item'=>100
@@ -164,7 +164,7 @@ if(!is_null($events)){
                      $imageUrl = 'https://www.mywebsite.com/imgsrc/photos/w/simpleflower';
                      $replyData = new TemplateMessageBuilder('Button Template',
                      new ButtonTemplateBuilder(
-                     'button template builder', // กำหนดหัวเรื่อง
+                     'Vibhavadi Hospital', // กำหนดหัวเรื่อง
                      'Please select', // กำหนดรายละเอียด
                       $imageUrl, // กำหนด url รุปภาพ
                       $actionBuilder  // กำหนด action object
