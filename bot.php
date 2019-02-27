@@ -161,7 +161,7 @@ if(!is_null($events)){
                      'Postback Text'  // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
                       ),      
                           );
-                     $imageUrl = 'https://www.mywebsite.com/imgsrc/photos/w/simpleflower';
+                     $imageUrl = 'https://www.vibhavadi.co.th/hi.jpg';
                      $replyData = new TemplateMessageBuilder('Button Template',
                      new ButtonTemplateBuilder(
                      'Vibhavadi Hospital', // กำหนดหัวเรื่อง
