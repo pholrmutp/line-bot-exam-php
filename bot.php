@@ -97,7 +97,7 @@ if(!is_null($events)){
                     $replyData = new StickerMessageBuilder($packageID,$stickerID);
                     break;      
                 case "im":
-                    $imageMapUrl = 'https://www.mywebsite.com/imgsrc/photos/w/sampleimagemap';
+                    $imageMapUrl = 'https://www.vibhavadi.co.th/logo.png';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         'This is Title',
