@@ -198,19 +198,19 @@ if(!is_null($events)){
                          new CarouselColumnTemplateBuilder(
                          'Title Carousel',
                          'Description Carousel',
-                         'https://www.vibhavadi.co.th/hi.jpg',
+                         'https://www.vibhavadi.co.th/hi2.jpg',
                           $actionBuilder
                           ),
                           new CarouselColumnTemplateBuilder(
                          'Title Carousel',
                          'Description Carousel',
-                         'https://www.vibhavadi.co.th/hi.jpg',
+                         'https://www.vibhavadi.co.th/hi3.jpg',
                          $actionBuilder
                           ),
                            new CarouselColumnTemplateBuilder(
                           'Title Carousel',
                            'Description Carousel',
-                           'https://www.vibhavadi.co.th/hi.jpg',
+                           'https://www.vibhavadi.co.th/hi4.jpg',
                             $actionBuilder
                             ),                                          
                             )
