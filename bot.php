@@ -130,7 +130,7 @@ if(!is_null($events)){
                         )
                     );
                     break;     
-              case "t_b":
+              case "menu":
                    // กำหนด action 4 ปุ่ม 4 ประเภท
                    $actionBuilder = array(
                    new MessageTemplateActionBuilder(
