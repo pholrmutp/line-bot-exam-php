@@ -129,7 +129,24 @@ if(!is_null($events)){
                                 )
                         )
                     );
-                    break;     
+                    break;  
+              case "reg":
+                    $replyData = new TemplateMessageBuilder('Confirm Template',
+                        new ConfirmTemplateBuilder(
+                                'Confirm Register to Vibhavadi Hospital',
+                                array(
+                                    new MessageTemplateActionBuilder(
+                                        'Yes',
+                                        'http://www.vibhavadi.co.th/index.php?a=test'
+                                    ),
+                                    new MessageTemplateActionBuilder(
+                                        'No',
+                                        'NO'
+                                    )
+                                )
+                        )
+                    );
+                    break;   
               case "menu":
                    // กำหนด action 4 ปุ่ม 4 ประเภท
                    $actionBuilder = array(
