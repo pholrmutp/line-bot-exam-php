@@ -66,8 +66,8 @@ if(!is_null($events)){
     switch ($typeMessage){
         case 'text':
             switch ($userMessage) {
-                case "t":
-                    $textReplyMessage = "Bot ตอบกลับคุณเป็นข้อความ";
+                case "uid":
+                    $textReplyMessage = "UID คุณ".$replyToken;
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
                 case "i":
