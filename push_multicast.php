@@ -51,11 +51,13 @@ use LINE\LINEBot\MessageBuilder\TemplateBuilder\ImageCarouselColumnTemplateBuild
  
 $httpClient = new CurlHTTPClient(LINE_MESSAGE_ACCESS_TOKEN);
 $bot = new LINEBot($httpClient, array('channelSecret' => LINE_MESSAGE_CHANNEL_SECRET));
+
+$uid = $_GET["uid"];
  
 // userId ของผู้ใช้ หลายๆ คน
 $userIds = array(
     
-    '".$_GET["uid"]."',     
+    '".$uid."',     
  
 );      
 // ทดสอบส่ง push ข้อความอย่างง่าย
@@ -65,7 +67,7 @@ $messageData = new TextMessageBuilder($textPushMessage);
 $response = $bot->multicast($userIds,$messageData);
 if ($response->isSucceeded()) {
     echo 'Succeeded!';
-   
+    echo $uid;
     return;
 }
  
