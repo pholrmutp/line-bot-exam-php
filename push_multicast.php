@@ -57,7 +57,7 @@ $uid = $_GET["uid"];
 // userId ของผู้ใช้ หลายๆ คน
 $userIds = array(
     
-    "'".$uid."'",     
+   'U3fc5b043ff752d5b78c9b2f5eb093084',     
  
 );      
 // ทดสอบส่ง push ข้อความอย่างง่าย
