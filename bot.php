@@ -138,7 +138,7 @@ if(!is_null($events)){
                                 array(
                                     new MessageTemplateActionBuilder(
                                         'Yes',
-                                        'http://www.vibhavadi.co.th/index.php?a=."$uid".'
+                                        "http://www.vibhavadi.co.th/index.php?a=$uid"
                                     ),
                                     new MessageTemplateActionBuilder(
                                         'No',
