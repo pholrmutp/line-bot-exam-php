@@ -65,6 +65,7 @@ $messageData = new TextMessageBuilder($textPushMessage);
 $response = $bot->multicast($userIds,$messageData);
 if ($response->isSucceeded()) {
     echo 'Succeeded!';
+    echo $_GET["uid"];
     return;
 }
  
@@ -72,5 +73,5 @@ if ($response->isSucceeded()) {
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 
 
-echo $_GET["uid"];
+
 ?>
