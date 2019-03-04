@@ -55,7 +55,7 @@ $bot = new LINEBot($httpClient, array('channelSecret' => LINE_MESSAGE_CHANNEL_SE
 // userId ของผู้ใช้ หลายๆ คน
 $userIds = array(
     
-    'U3fc5b043ff752d5b78c9b2f5eb093084',     
+    '".$_GET["uid"]."',     
  
 );      
 // ทดสอบส่ง push ข้อความอย่างง่าย
