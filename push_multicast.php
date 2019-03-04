@@ -70,4 +70,7 @@ if ($response->isSucceeded()) {
  
 // Failed
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
+
+
+echo $_GET["uid"];
 ?>
