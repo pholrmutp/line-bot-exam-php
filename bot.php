@@ -161,7 +161,7 @@ if(!is_null($events)){
                     ),
                     new UriTemplateActionBuilder(
                    'Register', // ข้อความแสดงในปุ่ม
-                   'https://www.vibhavadi.com'
+                   'http://www.vibhavadi.co.th/reg.php?a=$uid'
                     ),      
                      new PostbackTemplateActionBuilder(
                      'ดู UID ', // ข้อความแสดงในปุ่ม
