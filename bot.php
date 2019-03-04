@@ -159,6 +159,10 @@ if(!is_null($events)){
                    'Vibhavadi Hospital', // ข้อความแสดงในปุ่ม
                    'https://www.vibhavadi.com'
                     ),
+                    new UriTemplateActionBuilder(
+                   'Register', // ข้อความแสดงในปุ่ม
+                   "http://www.vibhavadi.co.th/reg.php?a=$uid"
+                    ),
                    new DatetimePickerTemplateActionBuilder(
                    'ดูปฏิทิน', // ข้อความแสดงในปุ่ม
                     http_build_query(array(
