@@ -62,12 +62,13 @@ if(!is_null($events)){
     $replyToken = $events['events'][0]['replyToken'];
     $typeMessage = $events['events'][0]['message']['type'];
     $userMessage = $events['events'][0]['message']['text'];
+    $uid = $events['events'][0]['source']['userId'];
     $userMessage = strtolower($userMessage);
     switch ($typeMessage){
         case 'text':
             switch ($userMessage) {
                 case "uid":
-                    $textReplyMessage = "UID คุณ ".$events['events'][0]['source']['userId'];
+                    $textReplyMessage = "UID คุณ ".$uid;
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
                 case "i":
@@ -137,7 +138,7 @@ if(!is_null($events)){
                                 array(
                                     new MessageTemplateActionBuilder(
                                         'Yes',
-                                        'http://www.vibhavadi.co.th/index.php?a=test'
+                                        'http://www.vibhavadi.co.th/index.php?a=$uid'
                                     ),
                                     new MessageTemplateActionBuilder(
                                         'No',
