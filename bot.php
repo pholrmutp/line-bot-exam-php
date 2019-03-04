@@ -67,7 +67,7 @@ if(!is_null($events)){
         case 'text':
             switch ($userMessage) {
                 case "uid":
-                    $textReplyMessage = "UID คุณ ".$userMessage;
+                    $textReplyMessage = "UID คุณ ".$events['events'][0]['source']['userId'];
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
                 case "i":
