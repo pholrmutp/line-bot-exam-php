@@ -52,7 +52,7 @@ use LINE\LINEBot\MessageBuilder\TemplateBuilder\ImageCarouselColumnTemplateBuild
 $httpClient = new CurlHTTPClient(LINE_MESSAGE_ACCESS_TOKEN);
 $bot = new LINEBot($httpClient, array('channelSecret' => LINE_MESSAGE_CHANNEL_SECRET));
 
-$uid = "U3fc5b043ff752d5b78c9b2f5eb093084";
+$uid = $_GET["uid"];
  
 // userId ของผู้ใช้ หลายๆ คน
 $userIds = array(
@@ -61,7 +61,7 @@ $userIds = array(
  
 );      
 // ทดสอบส่ง push ข้อความอย่างง่าย
-$textPushMessage = 'ทดสอบระบบข้อความเตือนอัตโนมัติ';                
+$textPushMessage = 'ทดสอบระบบข้อความเตือนอัตโนมัติ it vibhavadi';                
 $messageData = new TextMessageBuilder($textPushMessage);        
              
 $response = $bot->multicast($userIds,$messageData);
