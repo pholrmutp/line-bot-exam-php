@@ -71,6 +71,10 @@ if(!is_null($events)){
                     $textReplyMessage = "UID คุณ ".$uid;
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
+              case "นัด":
+                    $textReplyMessage = "นัด ".$uid."www.vibhavadi.co.th/".$uid;
+                    $replyData = new TextMessageBuilder($textReplyMessage);
+                    break;
                 case "i":
                     $picFullSize = 'https://www.mywebsite.com/imgsrc/photos/f/simpleflower';
                     $picThumbnail = 'https://www.mywebsite.com/imgsrc/photos/f/simpleflower/240';
