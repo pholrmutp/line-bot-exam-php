@@ -67,8 +67,7 @@ $messageData = new TextMessageBuilder($textPushMessage);
              
 $response = $bot->multicast($userIds,$messageData);
 if ($response->isSucceeded()) {
-    echo 'Succeeded!';
-    echo $uid;
+    echo 'Succeeded';
     return;
 }
  
