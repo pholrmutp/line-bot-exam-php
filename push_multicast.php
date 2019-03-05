@@ -61,7 +61,7 @@ $userIds = array(
  
 );      
 // ทดสอบส่ง push ข้อความอย่างง่าย
-$textPushMessage = 'ทดสอบระบบข้อความเตือนอัตโนมัติ it vibhavadi';                
+$textPushMessage = 'เรียนคุณเบล ลดน้ำหนักได้แล้ว';                
 $messageData = new TextMessageBuilder($textPushMessage);        
              
 $response = $bot->multicast($userIds,$messageData);
