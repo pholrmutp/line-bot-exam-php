@@ -72,7 +72,7 @@ if(!is_null($events)){
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
               case "นัด":
-                    $textReplyMessage = "www.vibhavadi.co.th/app/index.php?uid".$uid;
+                    $textReplyMessage = "www.vibhavadi.co.th/app/index.php?uid=".$uid;
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
                 case "i":
